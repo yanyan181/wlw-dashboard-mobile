@@ -19,10 +19,11 @@ const middlewareEnhancer = applyMiddleware(...middlewares);
 
 //TODO:引数怪しいからちゃんと書こうね！
 const store = createStore(rootReducer, middlewareEnhancer);
+alert("これは外部から呼ばれたreactコンポーネント");
 
 render(
   <Provider store={store}>
-    <div>aaaaaaa</div>
+    {/* <LoadButton /> */}
   </Provider>,
   document.querySelector("#load_button")
 );

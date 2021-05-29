@@ -87,10 +87,10 @@ export const LoadButton: React.FC = () => {
                 >
                   {state.isLoading
                     ? "読み込み中です。1分程度かかります(" +
-                      state.loadedCast +
-                      "/" +
-                      state.castList.length +
-                      ")"
+                    state.loadedCast +
+                    "/" +
+                    state.castList.length +
+                    ")"
                     : "キャストデータを取得する"}
                 </Button>
               </Grid>
@@ -98,7 +98,7 @@ export const LoadButton: React.FC = () => {
           </Card>
         </Grid>
       </Grid>
-      <App isStrage={state.isStrage} />
+      {/* <App isStrage={state.isStrage} /> */}
     </div>
   );
 };
