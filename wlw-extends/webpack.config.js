@@ -35,7 +35,8 @@ module.exports = {
     resolve: {
         // 拡張子を配列で指定
         extensions: [
-            '.ts', '.js', 'tsx',
+            '.ts', '.js', 'tsx', ".json"
         ],
+        modules: ["node_modules/", "scripts/", "pases/"],
     },
 };

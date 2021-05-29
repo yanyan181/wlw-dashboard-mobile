@@ -22,7 +22,7 @@ const store = createStore(rootReducer, middlewareEnhancer);
 
 render(
   <Provider store={store}>
-    {/* <LoadButton /> */}
+    <div>aaaaaaa</div>
   </Provider>,
   document.querySelector("#load_button")
 );
